@@ -1,0 +1,35 @@
+@import "./color";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+#flag {
+  width: 90px;
+  height: 60px;
+  box-sizing: content-box;
+  padding-top: 15px;
+  position: relative;
+  background: #212529;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+#flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #fff;
+  border-left: 47px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 55px solid rgb(243 210 59 / 39%);
+}
